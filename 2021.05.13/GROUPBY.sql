@@ -50,5 +50,6 @@ SELECT userID AS '사용자아이디'
  -- 제품그룹별로 사용자가 얼마만큼 
 SELECT userID
 	    SUM(price * amount) AS [총구매금액]
+	  --GROUPName
    FROM buyTbl
  GROUP BY ROLLUP(userID, groupName);
