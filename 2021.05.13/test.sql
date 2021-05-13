@@ -32,7 +32,7 @@ SELECT * INTO userTbl_New FROM userTbl;
 SELECT * FROM userTbl_New;
 
 SELECT userID, name, addr INTO userTbl Backup From userTbl;
- WHERE addr ='서울';
+ WHERE addr = '서울';
 
 SELECT * FROM userTbl_Backup; -- 원하는 테이블만 백업할 때 
 
